@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col} from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
@@ -10,7 +10,10 @@ function Home() {
     <section>
       <Container fluid className="home-section" id="home">
         <Particle />
-        <Container className="home-content">
+        <Container
+          className="home-content"
+          style={{ position: "relative", zIndex: 10 }}
+        >
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
@@ -35,10 +38,12 @@ function Home() {
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid clickable"
-                style={{ maxHeight: "450px", cursor: "pointer" }} // added cursor
+                style={{ maxHeight: "450px", cursor: "pointer" }}
               />
             </Col>
           </Row>
+
+         
         </Container>
       </Container>
       <Home2 />
