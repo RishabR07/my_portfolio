@@ -87,19 +87,20 @@ function NavBar() {
               </Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Link
-                to="resume"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className="nav-link"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument /> Resume
-              </Link>
-            </Nav.Item>
+<Nav.Item>
+  <Link
+    to="contact"
+    spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    className="nav-link"
+    onClick={() => updateExpanded(false)}
+  >
+    <CgFileDocument /> Contact
+  </Link>
+</Nav.Item>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

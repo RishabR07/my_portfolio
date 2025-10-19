@@ -1,0 +1,66 @@
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.email-btn {
+  background-color: #3b82f6; /* blue */
+}
+
+.linkedin-btn {
+  background-color: #3b82f6; /* same blue */
+}
+
+.github-btn {
+  background-color: #000000; /* black */
+}
+
+.instagram-btn {
+  background-color: #e1306c; /* pink */
+}
+
+.youtube-btn {
+  background-color: #ff0000; /* red */
+}
+/* Contact Section Base */
+.contact-section {
+  position: relative;
+  padding: 100px 0;
+  background-color: #0d1117; /* dark background (same as GitHub style) */
+  text-align: center;
+  color: white; /* ensures text is visible */
+}
+
+/* Headings and Paragraphs */
+.contact-section .heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fef9ff;
+}
+.violet-text {
+  color: #a855f7; /* nice violet (Tailwind violet-500) */
+}
+.violet-text {
+  background: linear-gradient(90deg, #8b5cf6, #a855f7, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  color: #efecf1; /* light gray for contrast */
+  margin-bottom: 30px;
+}

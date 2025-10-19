@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import Resume from "./components/Resume/ResumeNew";
+import Resume from "./components/Contact/ContactNew";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";

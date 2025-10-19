@@ -40,12 +40,6 @@ function Home2() {
               <br />
               Whenever possible, I also apply my passion for developing products
               with <b className="purple">Backend Frameworks</b> 
-              <i>
-                <b className="purple">
-                  {" "}
-          
-                </b>
-              </i>
               &nbsp; like
               <i>
                 <b className="purple"> Node.js and Spring Boot</b>
@@ -54,7 +48,17 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                src={myImg}
+                className="img-fluid"
+                alt="avatar"
+                style={{
+                  width: "250px",       // smaller size
+                  height: "250px",      // keep it square
+                  borderRadius: "100%",  // circular
+                  objectFit: "cover"    // crop nicely inside circle
+                }}
+              />
             </Tilt>
           </Col>
         </Row>
@@ -70,7 +74,7 @@ function Home2() {
                   href="https://github.com/RishabR07"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
@@ -80,7 +84,7 @@ function Home2() {
                   href="https://twitter.com/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiOutlineTwitter />
                 </a>
@@ -90,7 +94,7 @@ function Home2() {
                   href="https://www.linkedin.com/in/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -112,4 +116,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

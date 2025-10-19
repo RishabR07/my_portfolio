@@ -34,8 +34,8 @@ function Home() {
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                className="img-fluid clickable"
+                style={{ maxHeight: "450px", cursor: "pointer" }} // added cursor
               />
             </Col>
           </Row>
